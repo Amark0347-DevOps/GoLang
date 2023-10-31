@@ -13,6 +13,8 @@ func main() {
 	myfriend2(3)
 	fmt.Println(myfrind3())
 	myfriend4()
+	myfunc(10, 20)
+	fmt.Print(myfunc1(20, 30))
 }
 
 //1 . Parameter with return types
@@ -36,4 +38,15 @@ func myfrind3() int {
 // 4. no parameter with no return types
 func myfriend4() {
 	fmt.Println("Hello")
+}
+
+//This is diffrenet Topic for functions
+// * functions continuted  = it menas witch we can use shortended parameters
+func myfunc(x, y int) { //shortended parameter
+	fmt.Println(x, y)
+}
+
+// * Multipl result return a functon
+func myfunc1(x, y int) (int, int) {
+	return x, y
 }
